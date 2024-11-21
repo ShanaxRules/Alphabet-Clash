@@ -1,11 +1,7 @@
 var score=0;
 var life=1;
 
-window.onload = () => {
-    const hiddenInput = document.getElementById('hiddenInput');
-    hiddenInput.focus();
-    hiddenInput.addEventListener('blur', () => hiddenInput.focus()); 
-};
+
 
 
 document.getElementById('playnow').addEventListener('click' , function(){
