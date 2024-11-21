@@ -103,6 +103,9 @@ function gameOver(){
     val.classList.add('hidden');
     val2.classList.remove('hidden');
     finalScoreAppender();
+    const currentAlphabet = getElementTextByID('texter');
+    removeBG(currentAlphabet);
+    
 
 }
 
@@ -122,6 +125,11 @@ document.getElementById('playagain').addEventListener('click' , function(){
 
 });
 
+function getElementTextByID(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}
 
 
 
@@ -135,61 +143,9 @@ document.getElementById('playagain').addEventListener('click' , function(){
 
 
 
-// function continueGame(){
-//     const alphabet = randomAlphabet();
-//     const obj = document.getElementById('texter');
-//     obj.innerText = alphabet;
-//     const keys = document.getElementsByClassName('kbd');
-//     for (const key of keys){
-//         if (obj.innerText===key.innerText){
-//             key.classList.add('bg-yellow-400');
-//         }
-//     }
 
-//     scoreMaker();
 
-// }
 
-// var scoreMake = 1;
-
-// function scoreMaker() {
-//     const values = document.getElementsByClassName('kbd');
-//     const scorer = document.getElementById('scoreAble');
-//     const val3 = document.getElementById('scorecard');
-//     const finalValue = document.getElementById('final-score');
-//     const val2 = document.getElementById('play');
-    
-    
-
-    
-
-//     document.addEventListener('click', function (event) {
-//         for (let value of values) {
-//             if (value.contains(event.target)) {
-//                 if (value.classList.contains('bg-yellow-400')) {
-//                     scoreMake++;
-//                     scorer.innerText = scoreMake;
-//                     value.classList.remove('bg-yellow-400');
-                    
-//                 }
-//                 else{
-//                     life--;
-//                 }
-
-                
-
-                
-                
-//             }
-
-            
-//             // val2.classList.add('hidden');
-//         }
-        
-//     });
-
-    
-// }
 
 
 
