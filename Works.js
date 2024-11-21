@@ -105,6 +105,14 @@ function gameOver(){
     finalScoreAppender();
     const currentAlphabet = getElementTextByID('texter');
     removeBG(currentAlphabet);
+    score=0;
+    const elem = document.getElementById('scoreAble');
+    elem.innerText=score;
+    life=1;
+    const elem2 = document.getElementById('life');
+    elem2.innerText=life;
+
+
     
 
 }
