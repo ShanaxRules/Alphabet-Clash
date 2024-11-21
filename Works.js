@@ -98,7 +98,7 @@ function gameOver(){
     score=0;
     const elem = document.getElementById('scoreAble');
     elem.innerText=score;
-    life=1;
+    life=3;
     const elem2 = document.getElementById('life');
     elem2.innerText=life;
 
@@ -109,6 +109,7 @@ function finalScoreAppender(){
     element.innerText = score;
 }
 
+//the funt
 document.addEventListener('keyup' ,handleKeyboardPress);
 
 document.getElementById('playagain').addEventListener('click' , function(){
