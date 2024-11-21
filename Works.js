@@ -1,8 +1,5 @@
 var score=0;
-var life=1;
-
-
-
+var life=3;
 
 document.getElementById('playnow').addEventListener('click' , function(){
     const val = document.getElementById('Shan');
@@ -14,7 +11,6 @@ document.getElementById('playnow').addEventListener('click' , function(){
     continueGame();
 
 });
-
 
 function randomAlphabet(){
     const string = "abcdefghijklmnopqrstuvwxyz";
@@ -35,8 +31,6 @@ function continueGame(){
 
 
 }
-
-
 
 function setBGYellow(elementID){
     const obj = document.getElementById(elementID);
@@ -107,9 +101,6 @@ function gameOver(){
     life=1;
     const elem2 = document.getElementById('life');
     elem2.innerText=life;
-
-
-    
 
 }
 
